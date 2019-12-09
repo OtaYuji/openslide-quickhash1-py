@@ -1,0 +1,18 @@
+[package]
+name = "openslide-quickhash1-py"
+version = "0.1.0"
+authors = ["Yuji Ota <yuji.ota0827@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "openslide_quickhash1"
+crate-type = ["cdylib"]
+
+[dependencies]
+openslide = "0.2.0"
+
+[dependencies.pyo3]
+version = "0.8.3"
+features = ["extension-module"]
